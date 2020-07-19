@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QLKhachTro">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1565C0"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="QUẢN LÍ KHÁCH TRỌ"
+        android:textColor="#fff"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#1565C0"
+            android:padding="8dp"
+            android:text="TRA CỨU KHÁCH"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã phòng: "
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spPHG2"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnTraCuuKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/quy2"
+                android:onClick="TraCuuPHG"
+                android:text="Tra cứu"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvKhachTro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#1565C0"
+            android:padding="8dp"
+            android:text="THÊM KHÁCH"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ tên: "
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtTenKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="họ tên khách trọ"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CMND: "
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtCMND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="số chứng minh nhân dân"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SĐT: "
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/txtSDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="số điện thoại"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giới tính: "
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/rbNu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nữ" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã phòng: "
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spPHG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnThemKhachTro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/quy2"
+            android:onClick="ThemKhachTro"
+            android:padding="10dp"
+            android:text="Thêm khách trọ"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

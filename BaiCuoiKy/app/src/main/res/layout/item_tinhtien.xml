@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTenPHG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tên phòng" />
+
+    <TextView
+        android:id="@+id/txtDien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diện năng tiêu thụ" />
+
+    <TextView
+        android:id="@+id/txtNuoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lượng nước tiêu thụ" />
+
+    <TextView
+        android:id="@+id/txtTienTro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiền trọ" />
+
+    <TextView
+        android:id="@+id/txtNgayHD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày hoá đơn" />
+
+    <TextView
+        android:id="@+id/txtTrangThai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái" />
+
+    <TextView
+        android:id="@+id/txtThanhTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thành tiền" />
+
+    <EditText
+        android:id="@+id/txtGach"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="10dp"
+        android:background="#666"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+</LinearLayout>

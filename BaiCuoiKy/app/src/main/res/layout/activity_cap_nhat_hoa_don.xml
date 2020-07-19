@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CapNhatHoaDon">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1565C0"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="CẬP NHẬT HOÁ ĐƠN"
+        android:textColor="#fff"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điện năng tiêu thụ (kWh): "
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtDien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="lượng điện năng tiêu thụ"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lượng nước tiêu thụ (m3): "
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtNuoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="lượng nước tiêu thụ"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày hoá đơn: "
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtNgayHD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ngày lập hoá đơn"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã phòng: "
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spPHG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp" />
+
+        <Button
+            android:id="@+id/btnCapNhatHoaDon"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/quy2"
+            android:onClick="CapNhatHoaDon"
+            android:text="Cập nhật hoá đơn"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+</LinearLayout>
